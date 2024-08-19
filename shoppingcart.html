@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class='nav-bar'>
+        <div class='nav-title'>
+            <a href="index.html" class="nav-links"><img src="./images/AnsoOptics.png" class="AnsoOptics"></img></a>
+        </div>
+
+        <ul id="user_info">
+            <li><a href="#" class='nav-links' id="user"></a></li>
+        </ul>
+        <a href="login.html" class='logout-link' id="logout" onClick="clearStorage()">Logout</a>
+    </div>
+    <div class="shopping-items-cont">
+        <div class="shopping-item">
+            <img class="shopping-item-img" src="/images/glasses2.png" alt="">
+            <div class="shopping-item-desc">
+                <span>Product: <span></span></span>
+                <span>Category: <span></span></span>
+                <span>Price: <span></span></span>
+                <div class="shopping-item-buttons">
+                    <div class="first-buttons">
+                        <span class="amount">1</span>
+                        <span class="product-list-add">+</span>
+                        <span class="product-list-sub">-</span>
+                    </div>
+                    <div class="second-buttons">
+                        <input type="button" value="remove" class="remove-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping-item">
+            <img class="shopping-item-img" src="/images/glasses2.png" alt="">
+            <div class="shopping-item-desc">
+                <span>Product: <span></span></span>
+                <span>Category: <span></span></span>
+                <span>Price: <span></span></span>
+                <div class="shopping-item-buttons">
+                    <div class="first-buttons">
+                        <span class="amount">1</span>
+                        <span class="product-list-add">+</span>
+                        <span class="product-list-sub">-</span>
+                    </div>
+                    <div class="second-buttons">
+                        <input type="button" value="remove" class="remove-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping-item">
+            <img class="shopping-item-img" src="/images/glasses2.png" alt="">
+            <div class="shopping-item-desc">
+                <span>Product: <span></span></span>
+                <span>Category: <span></span></span>
+                <span>Price: <span></span></span>
+                <div class="shopping-item-buttons">
+                    <div class="first-buttons">
+                        <span class="amount">1</span>
+                        <span class="product-list-add">+</span>
+                        <span class="product-list-sub">-</span>
+                    </div>
+                    <div class="second-buttons">
+                        <input type="button" value="remove" class="remove-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="total-price-cont"><span class="total-price-label">Total Price: <span class="total-price"></span></span>
+    </div>
+    <hr class="line">
+    <div class="favourites-cont">
+        <h1 class="fav-title">Favourites</h1>
+        <div class="fav-items-cont">
+            <!-- <div class="fav-item">
+                <img src="/images/glasses.png" alt="" class="fav-item-img">
+                <div class="fav-desc">
+                    <div class="fav-first">
+                        <span class="fav-name">Product: </span>
+                        <span class="fav-cat">Category: </span>
+                    </div>
+                    <div class="fav-second">
+                        <i class="fa-regular fa-heart favourite" style="color: #bdc3c7;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fav-item">
+                <img src="/images/glasses.png" alt="" class="fav-item-img">
+                <div class="fav-desc">
+                    <div class="fav-first">
+                        <span class="fav-name">Product: </span>
+                        <span class="fav-cat">Category: </span>
+                    </div>
+                    <div class="fav-second">
+                        <i class="fa-regular fa-heart favourite" style="color: #bdc3c7;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fav-item">
+                <img src="/images/glasses.png" alt="" class="fav-item-img">
+                <div class="fav-desc">
+                    <div class="fav-first">
+                        <span class="fav-name">Product: </span>
+                        <span class="fav-cat">Category: </span>
+                    </div>
+                    <div class="fav-second">
+                        <i class="fa-regular fa-heart favourite" style="color: #bdc3c7;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fav-item">
+                <img src="/images/glasses.png" alt="" class="fav-item-img">
+                <div class="fav-desc">
+                    <div class="fav-first">
+                        <span class="fav-name">Product: </span>
+                        <span class="fav-cat">Category: </span>
+                    </div>
+                    <div class="fav-second">
+                        <i class="fa-regular fa-heart favourite" style="color: #bdc3c7;"></i>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src='/js/shoppingcart.js'></script>
+</body>
+
+</html>

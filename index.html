@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class='nav-bar'>
+        <div class='nav-title'>
+            <a href="index.html" class="nav-links"><img src="./images/AnsoOptics.png" class="AnsoOptics"></img></a>
+        </div>
+        <div class='nav-links-cont' id="nav-link">
+            <a href="signup.html" class='nav-links'>
+                Sign up
+            </a>
+            <a href="login.html" class='nav-links'>
+                Log in
+            </a>
+        </div>
+        <ul id="user_info">
+            <li><a href="#" class='nav-links' id="user"></a></li>
+        </ul>
+        <ul id="user_nav_links">
+            <li class="cart-icon-cont" onClick="openCart"><i class="fa-solid fa-cart-shopping cart-icon" style="color: #2C3E50;"></i>
+            <span class="cart-badge"></span></li>
+                <div class="cart-products-list">
+                    <div class="items-list-cont">
+                        
+                    </div>
+                    
+                    <a href="shoppingcart.html">View cart products</a>
+                </div>
+            <li><a href="login.html" class='nav-links' id="logout" onClick="clearStorage()">Logout</a></li>
+        </ul>
+    </div>
+    <div>
+        <div class="search-main">
+            <div class='search-cont'>
+                <select class='dropdown-cont'>
+                    <option value="name">Search by name</option>
+                    <option value="cat">Search by category</option>
+                </select>
+                <input type='text' placeholder='Search' class='search'  onKeyDown="searchFunc()">
+                </input>
+            </div>
+        </div>
+        <hr class='line' />
+    </div>
+    <div class="item-containers-container">
+        <div class="item-container">
+            <!-- <div class='item-card-main'>
+                <div class="img-cont"><img class='item-card-img' src="images/glasses.png"></img></div>
+                <div class='item-card-desc'>
+                    <span>Product:<span></span></span>
+                    <span>Price:<span></span></span>
+                    <span>Category:<span></span></span>
+                </div>
+                <div class="card-buttons">
+                    <input type="button" value="Add to Cart" class="add-cart-button">
+                    <i class="fa-regular fa-heart favourite" style="color: #bdc3c7;"></i>
+                </div>
+            </div>
+            <div class='item-card-main'>
+                <div class="img-cont"><img class='item-card-img' src="images/glasses.png"></img></div>
+                <div class='item-card-desc'>
+                    <span>Product:<span></span></span>
+                    <span>Price:<span></span></span>
+                    <span>Category:<span></span></span>
+                </div>
+                <div class="card-buttons">
+                    <input type="button" value="Add to Cart" class="add-cart-button">
+                    <i class="fa-regular fa-heart favourite" style="color: #bdc3c7;"></i>
+                </div>
+            </div>
+            <div class='item-card-main'>
+                <div class="img-cont"><img class='item-card-img' src="images/glasses.png"></img></div>
+                <div class='item-card-desc'>
+                    <span>Product:<span></span></span>
+                    <span>Price:<span></span></span>
+                    <span>Category:<span></span></span>
+                </div>
+                <div class="card-buttons">
+                    <input type="button" value="Add to Cart" class="add-cart-button">
+                    <i class="fa-regular fa-heart favourite" style="color: #bdc3c7;"></i>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="/js/home.js"></script>
+</body>
+
+</html>

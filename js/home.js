@@ -255,24 +255,6 @@ function addCart(id) {
 
 //////////////////////////////////////////////////////////////////////////
 
-
-function searchFunc() {
-    if (searchVal != null) {
-        let searchArray = products.filter((item) => {
-            if (categoryDropdown.value === "name") {
-                return item.name.toLowerCase().includes(searchBar.value.toLowerCase())
-            }
-            else {
-                return item.category.toLowerCase().includes(searchBar.value.toLowerCase())
-            }
-        })
-        createItems(searchArray);
-    }
-    else {
-        createItems(products);
-    }
-}
-
 let favArr = []
 
 function favour(id) {
@@ -307,6 +289,34 @@ function favour(id) {
         }, 1500);
     }
 }
+
+function searchFunc() {
+    let x = JSON.parse(localStorage.getItem("favArr")) || [];
+    let y = JSON.parse(localStorage.getItem("shopping_cart")) || [];
+    if (searchVal != null) {
+        let searchArray = products.filter((item) => {
+            if (categoryDropdown.value === "name") {
+                return item.name.toLowerCase().includes(searchBar.value.toLowerCase())
+            }
+            else {
+                return item.category.toLowerCase().includes(searchBar.value.toLowerCase())
+            }
+        })
+
+        createItems(searchArray);
+        y.map((item) => { addCart(item.id) })
+        x.map((item) => { favour(item.id) })
+    }
+    else {
+        createItems(products);
+        y.map((item) => { addCart(item.id) })
+        x.map((item) => { favour(item.id) })
+    }
+    y.map((item) => { addCart(item.id) })
+    x.map((item) => { favour(item.id) })
+}
+
+
 
 let oldCart = JSON.parse(localStorage.getItem("shopping_cart")) || [];
 oldCart.map((item) => { addCart(item.id) })

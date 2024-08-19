@@ -25,7 +25,7 @@ function createCartItems() {
                         <span class="product-list-sub" data-id="${item.id}">-</span>
                     </div>
                     <div class="second-buttons">
-                        <input type="button" value="remove" class="remove-btn" data-index="${index}">
+                        <input type="button" value="Remove" class="remove-btn" data-index="${index}">
                     </div>
                 </div>
             </div>

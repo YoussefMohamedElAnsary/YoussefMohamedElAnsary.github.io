@@ -279,6 +279,7 @@ body {
   }
 
   #user_nav_links{
+    justify-content: left;
     display: none;
     text-decoration: none;
     list-style: none;

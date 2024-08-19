@@ -19,7 +19,7 @@ if (fname != null) {
     links.remove()
     userInfo.style.display = "flex"
     userNav.style.display = "flex"
-    userData.innerHTML = "Welcome " + fname + " " + lname
+    userData.innerHTML = "Welcome " + fname 
 }
 
 ////////////////////////////////////////////////////////////

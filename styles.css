@@ -66,7 +66,7 @@ body {
   }
   
   .nav-links-cont{
-    
+    padding-right: 20px;
     text-wrap: nowrap;
     overflow: hidden;
     display: flex;
